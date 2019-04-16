@@ -102,4 +102,13 @@ class Feature extends GeoJson
 
         return $json;
     }
+    
+    /**
+     * Add or update a property value
+     * @param $name
+     * @param $value
+     */
+    public function setProperty($name, $value){
+        $this->properties[$name] = $value;
+    }
 }
